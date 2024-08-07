@@ -11,8 +11,8 @@
   <link rel="stylesheet" href="style.css">
 </head>
 
-
 <body>
+  </div>
   <div class="container">
     <div class="profile">
       <div class="profile_container">
@@ -20,31 +20,46 @@
           <img src="./profileimg.png" alt="pedro valente">
         </div>
         <div>
+          <div class="language-selector">
+            <select id="languageDropdown" onchange="changeLanguage()">
+              <option value="index.html">Português</option>
+              <option value="index_en.html">English</option>
+            </select>
+          </div>
           <h1 class="profile_name">
             <span class="profile_name_firstName">Pedro</span>
             <span class="profile_name_lastName">Valente</span>
           </h1>
           <p class="profile_title">Estudante 2º Ano Desenvolvimento Ágil de Software</p>
-          <p class="description profile_description"> 
-            Estudante de Desenvolvimento Ágil de Software no ISEP, com foco em desenvolvimento de software e práticas DevOps. Utilizo Scrum e aplicação dos princípios SOLID, visando a criação de código robusto e escalável.
+          <p class="description profile_description">
+            Estudante de Desenvolvimento Ágil de Software no ISEP, com foco em desenvolvimento de software e
+            práticas
+            DevOps. Utilizo Scrum e aplicação dos princípios SOLID, visando a criação de código robusto e escalável.
           </p>
-          <a class="downloadBtn" href="./cv_PedroValente.pdf" download="cv_PedroValente.pdf">Descarregar CV</a>
+          <a class="downloadBtn" href="./cv_PedroValentePT.pdf" download="cv_PedroValente.pdf">
+            <i data-feather="download"></i>&nbsp;Descarregar CV
+        </a>
+        
         </div>
       </div>
     </div>
+
     <div class="group-1">
       <div class="skills">
         <h3 class="title">SKILLS</h3>
         <ul class="skills_list description">
+          <li>PHP</li>
+          <li>Javascript</li>
           <li>Java & JavaFX</li>
           <li>C#</li>
-          <li>SQL</li>
-          <li>Javascript</li>
-          <li>PHP</li>
+          <li>MySQL & SQL</li>
           <li>HTML & CSS</li>
+          <li>Swagger</li>
+          <li>Kubernetes</li>
+          <li>Docker</li>
         </ul>
       </div>
-     
+
 
       <div class="edu">
         <h3 class="title">Educação</h3>
@@ -77,18 +92,28 @@
           <h4 class="item_title">Carta de Condução B</h4>
           </p>
         </div>
-     </div>
+      </div>
     </div>
 
     <div class="group-2">
       <div class="exp">
         <h3 class="title">Experiência Profissional</h3>
         <div class="exp_item">
-          <p class="item_preTitle">2021 - 2023</p>
           <h4 class="item_title">Ramada Aços SA.</h4>
           <p class="item_subtitle">Técnico de Manutenção e Conservação</p>
-          <p class=" description">
+          <p class=" description_smaller">
+            Trabalho a tempo inteiro
           </p>
+          <p class="item_preTitle">2021 - 2023</p>
+          <br>
+          <div class="exp_item">
+            <h4 class="item_title">Digitalmente, Novas Tecnologias de Comunicação, Lda</h4>
+            <p class="item_subtitle">Desenvolvedor Web (PHP,Javascript,MySQL)</p>
+            <p class=" description_smaller">
+              Estágio Curricular
+            </p>
+            <p class="item_preTitle">Abril - Julho 2024</p>
+          </div>
         </div>
       </div>
 
@@ -98,11 +123,14 @@
           <p class="item_preTitle">2014-2023</p>
           <h4 class="item_title">Alquimia das Estrelas</h4>
           <p class=" description">
-            Fui membro integrante do grupo de solidariadade e voluntariado Alquimia das Estrelas:ASAS - Anjos Solidários 
-            <p class=" description_smaller">
-              Realização de teatro amador e outros tipos de espetáculos para angariação de fundos e bens materiais para doar a instituições, nomeadamente a ala pediátrica do IPO do Porto
-              Colaboração com Juntas de Freguesia para atividades de cariz social
-            </p>
+            Fui membro integrante do grupo de solidariadade e voluntariado Alquimia das Estrelas:ASAS - Anjos
+            Solidários
+          <p class=" description_smaller">
+            Realização de teatro amador e outros tipos de espetáculos para angariação de fundos e bens materiais
+            para
+            doar a instituições, nomeadamente a ala pediátrica do IPO do Porto
+            Colaboração com Juntas de Freguesia para atividades de cariz social
+          </p>
           </p>
         </div>
       </div>
@@ -113,10 +141,10 @@
           <p class="item_preTitle">2007-2016</p>
           <h4 class="item_title">GAC</h4>
           <p class=" description">
-            Participação na Secção de Música do Grupo de Ação Cultural de Válega 
+            Participação na Secção de Música do Grupo de Ação Cultural de Válega
           </p>
           <p class="description_smaller">
-            Aprendi a tocar guitarra clássica, cavaquinho e também participei nos festivais da mesma secção músical
+            Aprendi a tocar guitarra clássica, cavaquinho e também participei nos espetáculos da mesma secção músical
           </p>
         </div>
         <br>
@@ -127,7 +155,10 @@
             Membro efetivo do grupo de Carnaval de Ovar Xaxas
           </p>
           <p class="description_smaller">
-            Participar ativamente neste grupo de Carnaval de Ovar tem sido uma experiência incrivelmente enriquecedora, permitindo-me aprimorar minhas habilidades de criatividade, comunicação, trabalho em equipa, e muito mais
+            Participar ativamente neste grupo de Carnaval de Ovar tem sido uma experiência incrivelmente
+            enriquecedora,
+            permitindo-me aprimorar minhas habilidades de criatividade, comunicação, trabalho em equipa, e muito
+            mais
           </p>
         </div>
       </div>
@@ -164,43 +195,56 @@
     <div class="group-3">
       <div class="contact">
         <h3 class="title">Contacto</h3>
-        <div class="contact_info">
-          <p class="description">
+        <div class="contact_items">
+          <div class="contact_item">
             <span class="material-symbols-outlined">&#xE0C8;</span>
-            Ovar
-          </p>
-          <p class="description">
+            <span>Ovar</span>
+          </div>
+          <div class="contact_item">
             <span class="material-symbols-outlined">&#xE32C;</span>
-            +351 915782122
-          </p>
-          <p class="description">
+            <a href="tel:+351915782122" class="phone-link">+351 915782122</a>
+          </div>
+          <div class="contact_item">
             <span class="material-symbols-outlined">&#xE158;</span>
-            pedro_silvavalente@hotmail.com
-          </p>
+            <a href="mailto:pedro_silvavalente@hotmail.com" target="_blank"
+              class="email-link">pedro_silvavalente@hotmail.com</a>
+          </div>
         </div>
-      </div>
-
-      <div class="social">
-        <h3 class="title">Redes</h3>
-        <div class="social_items">
-          <a href="https://github.com/idunnowhoami" target="_b" class="social_item">
-            <i data-feather="github"></i>
-            <span>/idunnowhoami</span>
-            <a href="https://github.com/idunnowhoami"></a>
-          </a>
-          <a href="https://www.linkedin.com/in/pedrovalente98" target="_b" class="social_item">
-            <i data-feather="linkedin"></i>
-            <span>/Pedro Valente</span>
-            <a href="https://www.linkedin.com/in/pedrovalente98"></a>
-          </a>
-        </div>
-      </div>
-
     </div>
+
+    <div class="social">
+      <h3 class="title">Redes</h3>
+      <div class="social_items">
+        <a href="https://github.com/idunnowhoami" target="_b" class="social_item">
+          <i data-feather="github"></i>
+          <span>/idunnowhoami</span>
+          <a href="https://github.com/idunnowhoami"></a>
+        </a>
+        <a href="https://www.linkedin.com/in/pedrovalente98" target="_b" class="social_item">
+          <i data-feather="linkedin"></i>
+          <span>/Pedro Valente</span>
+          <a href="https://www.linkedin.com/in/pedrovalente98"></a>
+        </a>
+      </div>
+    </div>
+
+  </div>
   </div>
 
   <script>
+    function changeLanguage() {
+      const languageDropdown = document.getElementById('languageDropdown');
+      const selectedLanguage = languageDropdown.value;
+      window.location.href = selectedLanguage;
+    }
+  </script>
+
+  <script>
     feather.replace()
+    document.querySelector('.language-selector select').addEventListener('focus', function () {
+      this.style.outline = 'none';
+      this.style.boxShadow = 'none';
+    });
   </script>
 
 </body>

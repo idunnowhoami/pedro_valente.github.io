@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pedro Valente</title>
+  <script src="https://unpkg.com/feather-icons"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  </div>
+  <div class="container">
+    <div class="profile">
+      <div class="profile_container">
+        <div class="profile_profileImg">
+          <img src="./profileimg.png" alt="pedro valente">
+        </div>
+        <div>
+          <h1 class="profile_name">
+            <span class="profile_name_firstName">Pedro</span>
+            <span class="profile_name_lastName">Valente</span>
+          </h1>
+          <p class="profile_title">Estudante 2º Ano Desenvolvimento Ágil de Software</p>
+          <p class="description profile_description">
+            Estudante de Desenvolvimento Ágil de Software no ISEP, com foco em desenvolvimento de software e
+            práticas
+            DevOps. Utilizo Scrum e aplicação dos princípios SOLID, visando a criação de código robusto e escalável.
+          </p>
+          
+        </div>
+      </div>
+    </div>
+
+    <div class="group-1">
+      <div class="skills">
+        <h3 class="title">SKILLS</h3>
+        <ul class="skills_list description">
+          <li>PHP</li>
+          <li>Javascript</li>
+          <li>Java & JavaFX</li>
+          <li>C#</li>
+          <li>MySQL & SQL</li>
+          <li>HTML & CSS</li>
+          <li>Python</li>
+          <li>Swagger</li>
+          <li>Kubernetes</li>
+          <li>Docker</li>
+        </ul>
+      </div>
+
+
+      <div class="edu">
+        <h3 class="title">Educação</h3>
+        <div class="edu_item">
+          <h4 class="item_title">12º Ano Cientifico-Humanístico de Ciências e Tecnologias</h4>
+          <p class="item_subtitle">
+            Escola José Macedo Fragateiro, Ovar
+          </p>
+          <p class="item_preTitle">2013 - 2016</p>
+        </div>
+        <div class="edu_item">
+          <h4 class="item_title">CTESP Desenvolvimento Ágil de Software</h4>
+          <p class="item_subtitle">
+            Instituto Superior de Engenharia do Porto: ISEP
+          </p>
+          <p class="item_preTitle">2023 - presente</p>
+        </div>
+      </div>
+      <div class="linguagens">
+        <h3 class="title">Linguagens</h3>
+        <ul class="skills_list description">
+          <li>Inglês | B2</li>
+          <li>Espanhol | A2</li>
+        </ul>
+      </div>
+      <div class="edu">
+        <h3 class="title">Habilitações</h3>
+        <div class="edu_item">
+          <h4 class="item_title">Carta de Condução B</h4>
+          </p>
+          <p class="item_preTitle">2017</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="group-2">
+      <div class="exp">
+        <h3 class="title">Experiência Profissional</h3>
+        <div class="exp_item">
+          <h4 class="item_title">Ramada Aços SA.</h4>
+          <p class="item_subtitle">Técnico de Manutenção e Conservação</p>
+          <p class=" description_smaller">
+            Trabalho a tempo inteiro
+          </p>
+          <p class="item_preTitle">2021 - 2023</p>
+          <br>
+          <div class="exp_item">
+            <h4 class="item_title">Digitalmente, Novas Tecnologias de Comunicação, Lda</h4>
+            <p class="item_subtitle">Desenvolvedor Web (PHP,Javascript,MySQL)</p>
+            <p class=" description_smaller">
+              Estágio Curricular
+            </p>
+            <p class="item_preTitle">Abril - Julho 2024</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="Voluntariado">
+        <h3 class="title">Voluntariado</h3>
+        <div class="voluntariado">
+          <h4 class="item_title">Alquimia das Estrelas</h4>
+          <p class=" description">
+            Fui membro integrante do grupo de solidariadade e voluntariado Alquimia das Estrelas:ASAS - Anjos
+            Solidários
+          <p class=" description_smaller">
+            Realização de teatro amador e outros tipos de espetáculos para angariação de fundos e bens materiais
+            para
+            doar a instituições, nomeadamente a ala pediátrica do IPO do Porto
+            Colaboração com Juntas de Freguesia para atividades de cariz social
+          </p>
+          <p class="item_preTitle">2014 - 2023</p>
+          </p>
+        </div>
+      </div>
+
+      <div class="Participacao">
+        <h3 class="title">Participação</h3>
+        <div class="participacao">
+          <h4 class="item_title">GAC</h4>
+          <p class=" description">
+            Participação na Secção de Música do Grupo de Ação Cultural de Válega
+          </p>
+          <p class="description_smaller">
+            Aprendi a tocar guitarra clássica, cavaquinho e também participei nos espetáculos da mesma secção músical
+          </p>
+          <p class="item_preTitle">2007 - 2016</p>
+        </div>
+        <br>
+        <div class="participacao">
+          <h4 class="item_title">Grupo de Carnaval XAXAS</h4>
+          <p class=" description">
+            Membro efetivo do grupo de Carnaval de Ovar Xaxas
+          </p>
+          <p class="description_smaller">
+            Participar ativamente neste grupo de Carnaval de Ovar tem sido uma experiência incrivelmente
+            enriquecedora,
+            permitindo-me aprimorar minhas habilidades de criatividade, comunicação, trabalho em equipa, e muito
+            mais
+          </p>
+          <p class="item_preTitle">2006 - presente</p>
+        </div>
+      </div>
+
+      <div class="interest">
+        <h3 class="title">Interesses</h3>
+        <div class="interest_items">
+          <div class="interest_item">
+            <span class="material-symbols-outlined">&#xF5D0;</span>
+            <span>Tecnologias</span>
+          </div>
+          <div class="interest_item">
+            <i data-feather="music"></i>
+            <span>Música</span>
+          </div>
+          <div class="interest_item">
+            <i data-feather="book"></i>
+            <span>Livros</span>
+          </div>
+          <div class="interest_item">
+            <span class="material-symbols-outlined">&#xEAD7;</span>
+            <span>Pesca</span>
+          </div>
+          <div class="interest_item">
+            <span class="material-symbols-outlined">&#xEA32;</span>
+            <span>Desporto</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <hr>
+    <div class="group-3">
+      <div class="contact">
+          <h3 class="title">Contacto</h3>
+          <div class="contact_items">
+              <div class="contact_item">
+                  <a href="https://www.cm-ovar.pt/pt/menu/2878/um-pouco-da-sua-historia.aspx" target="_blank" style="color: inherit; text-decoration: none;">
+                      <span class="material-symbols-outlined">&#xE0C8;</span>
+                      Ovar
+                  </a>
+              </div>
+              <div class="contact_item">
+                  <a href="tel:+351915782122" class="phone-link" style="color: inherit; text-decoration: none;">
+                      <span class="material-symbols-outlined">&#xE32C;</span>
+                      +351 915782122
+                  </a>
+              </div>
+              <div class="contact_item">
+                  <a href="mailto:pedro_silvavalente@hotmail.com" target="_blank" class="email-link" style="color: inherit; text-decoration: none;">
+                      <span class="material-symbols-outlined">&#xE158;</span>
+                      pedro_silvavalente@hotmail.com
+                  </a>
+              </div>
+          </div>
+      </div>
+
+    <div class="social">
+      <h3 class="title">Redes</h3>
+      <div class="social_items">
+        <a href="https://github.com/idunnowhoami" target="_b" class="social_item">
+          <i data-feather="github"></i>
+          <span>/idunnowhoami</span>
+          <a href="https://github.com/idunnowhoami"></a>
+        </a>
+        <a href="https://www.linkedin.com/in/pedrovalente98" target="_b" class="social_item">
+          <i data-feather="linkedin"></i>
+          <span>/Pedro Valente</span>
+          <a href="https://www.linkedin.com/in/pedrovalente98"></a>
+        </a>
+      </div>
+    </div>
+
+  </div>
+  </div>
+
+  <script>
+    function changeLanguage() {
+      const languageDropdown = document.getElementById('languageDropdown');
+      const selectedLanguage = languageDropdown.value;
+      window.location.href = selectedLanguage;
+    }
+  </script>
+
+<script>
+  feather.replace()
+</script>
+
+</body>
+
+</html>

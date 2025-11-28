@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-
 <body>
     <div class="container">
         <div class="profile">
@@ -20,46 +19,171 @@
                     <img src="./profileimg.png" alt="Pedro Valente">
                 </div>
                 <div>
-                    <div class="language-selector">
-                        <select id="languageDropdown" onchange="changeLanguage()">
-                            <option value="index_en.html">English</option>
-                            <option value="index.html">Português</option>
-                        </select>
+                    <!-- Selector de linguagem -->
+                    <div class="language-toggle">
+                        <button class="lang-btn" data-lang="pt" onclick="changeLanguage('pt')">Português</button>
+                        <button class="lang-btn" data-lang="en" onclick="changeLanguage('en')">English</button>
                     </div>
+
+
                     <h1 class="profile_name">
-                        <span class="profile_name_firstName">Pedro</span>
-                        <span class="profile_name_lastName">Valente</span>
+                        <span class="profile_name">Pedro Valente</span>
+                        <span class="profile_job">Agile Software/Web Developer</span>
                     </h1>
                     <p class="profile_title">2º Year Student in Agile Software Development</p>
                     <p class="description profile_description">
                         Agile Software Development student at ISEP, focused on software development and DevOps
                         practices. I use Scrum and apply SOLID principles, aiming to create robust and scalable code.
                     </p>
+
+                    <!-- Botão para sacar o PDF -->
                     <a class="downloadBtn" href="./cv_PedroValenteEN.pdf" download="cv_PedroValente.pdf">
                         <i data-feather="download"></i>&nbsp;Download CV
                     </a>
                 </div>
             </div>
         </div>
+
         <div class="group-1">
             <div class="skills">
                 <h3 class="title">SKILLS</h3>
                 <ul class="skills_list description">
-                  <li>PHP</li>
-                  <li>Javascript</li>
-                  <li>Java & JavaFX</li>
-                  <li>C#</li>
-                  <li>MySQL & SQL</li>
-                  <li>HTML & CSS</li>
-                  <li>Python</li>
-                  <li>Vagrant</li>
-                  <li>Swagger</li>
-                  <li>Kubernetes</li>
-                  <li>Docker</li>
-                  <li>Jenkins</li>
+                    <li>
+                        <span>PHP</span>
+                        <div class="skill-level">
+                            <span class="dot filled"></span>
+                            <span class="dot filled"></span>
+                            <span class="dot filled"></span>
+                            <span class="dot filled"></span>
+                            <span class="dot"></span>
+                        </div>
+                        <p class="description_2">PHP, Laravel, PHPUnit, Composer</p>
+                    </li>
+                    <li>
+                        <span>Javascript</span>
+                        <div class="skill-level">
+                            <span class="dot filled"></span>
+                            <span class="dot filled"></span>
+                            <span class="dot filled"></span>
+                            <span class="dot filled"></span>
+                            <span class="dot"></span>
+                        </div>
+                        <p class="description_2">Javascript, AJAX, DOM Manipulation, Bootstrap, Libraries</p>
+                    </li>
+                    <li>
+                        <span>Data base</span>
+                        <div class="skill-level">
+                            <span class="dot filled"></span>
+                            <span class="dot filled"></span>
+                            <span class="dot filled"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                        </div>
+                        <p class="description_2">Microsft SQL, MySQL, MongoDB</p>
+                    </li>
+
+                    <li>
+                        <span>Java</span>
+                        <div class="skill-level">
+                            <span class="dot filled"></span>
+                            <span class="dot filled"></span>
+                            <span class="dot filled"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                        </div>
+                        <p class="description_2">Java, JavaFX, JUnit, Mockito, Libraries</p>
+                    </li>
+
+                    <li>
+                        <span>HTML & CSS</span>
+                        <div class="skill-level">
+                            <span class="dot filled"></span>
+                            <span class="dot filled"></span>
+                            <span class="dot filled"></span>
+                            <span class="dot filled"></span>
+                            <span class="dot"></span>
+                        </div>
+                        <p class="description_2">HTML, CSS, Markdown</p>
+                    </li>
+                    <li>
+                        <span>C#</span>
+                        <div class="skill-level">
+                            <span class="dot filled"></span>
+                            <span class="dot filled"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                        </div>
+                        <p class="description_2">C#, .NET</p>
+                    </li>
+                    <li>
+                        <span>Python</span>
+                        <div class="skill-level">
+                            <span class="dot filled"></span>
+                            <span class="dot filled"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                        </div>
+                        <p class="description_2">Python - Scripting</p>
+                    </li>
+                    <li>
+                        <span>Containers and Virualization</span>
+                        <div class="skill-level">
+                            <span class="dot filled"></span>
+                            <span class="dot filled"></span>
+                            <span class="dot filled"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                        </div>
+                        <p class="description_2">Vagrant, Docker , Kubernetes</p>
+                    </li>
+                    <li>
+                        <span>CI and CD</span>
+                        <div class="skill-level">
+                            <span class="dot filled"></span>
+                            <span class="dot filled"></span>
+                            <span class="dot filled"></span>
+                            <span class="dot filled"></span>
+                            <span class="dot"></span>
+                        </div>
+                        <p class="description_2">GIT, Github, Bitbucket, Jenkins</p>
+                    </li>
+                    <li>
+                        <span>Documentation</span>
+                        <div class="skill-level">
+                            <span class="dot filled"></span>
+                            <span class="dot filled"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                        </div>
+                        <p class="description_2">Swagger, Javadocs</p>
+                    </li>
+                    <li>
+                        <span>Scrum & Agile</span>
+                        <div class="skill-level">
+                            <span class="dot filled"></span>
+                            <span class="dot filled"></span>
+                            <span class="dot filled"></span>
+                            <span class="dot filled"></span>
+                            <span class="dot"></span>
+                        </div>
+                        <p class="description_smaller">Scrum, Kanban, Jira, Microsoft Project</p>
+                    </li>
+                    <li>
+                        <span>Video & Image editing </span>
+                        <div class="skill-level">
+                            <span class="dot filled"></span>
+                            <span class="dot filled"></span>
+                            <span class="dot filled"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                        </div>
+                        <p class="description_smaller">Adobe Photoshop, Adobe Premiere Pro </p>
+                    </li>
                 </ul>
             </div>
-
 
             <div class="edu">
                 <h3 class="title">Education</h3>
@@ -78,6 +202,7 @@
                 </div>
                 <p class="item_preTitle">2022 - present</p>
             </div>
+
             <div class="languages">
                 <h3 class="title">Languages</h3>
                 <ul class="skills_list description">
@@ -85,11 +210,11 @@
                     <li>Spanish | A2</li>
                 </ul>
             </div>
+
             <div class="edu">
                 <h3 class="title">Qualifications</h3>
                 <div class="edu_item">
                     <h4 class="item_title">Driver's License B</h4>
-                    </p>
                     <p class="item_preTitle">2017</p>
                 </div>
             </div>
@@ -101,16 +226,23 @@
                 <div class="exp_item">
                     <h4 class="item_title">Ramada Aços SA.</h4>
                     <p class="item_subtitle">Maintenance and Conservation Technician</p>
-                    <p class=" description_smaller">
-                        Full-time job
+                    <p class="description_smaller">
+                        Full-time position focused on ensuring the operational reliability of machines used in
+                        metallurgical heat treatments. Responsible for performing preventive maintenance, diagnosing and
+                        resolving issues, as well as repairing equipment, directly contributing to operational
+                        efficiency and continuity as part of the maintenance team.
                     </p>
                     <p class="item_preTitle">2021 - 2023</p>
                     <br>
                     <div class="exp_item">
                         <h4 class="item_title">Digitalmente, Novas Tecnologias de Comunicação, Lda</h4>
                         <p class="item_subtitle">Web Developer (PHP, Javascript, MySQL)</p>
-                        <p class=" description_smaller">
-                            Internship
+                        <p class="description_smaller">
+                            Curricular internship focused on developing a real-time dynamic dashboard for customer
+                            support management. Implemented features include enhanced ticket tracking, insight
+                            generation through visual analyses with interactive graphs and data, as well as continuous
+                            report download capabilities. These improvements significantly contributed to process
+                            efficiency and data-driven decision-making.
                         </p>
                         <p class="item_preTitle">April - July 2024</p>
                     </div>
@@ -124,10 +256,10 @@
                     <p class="description">
                         I was an integral member of the solidarity and volunteering group Alquimia das Estrelas: ASAS -
                         Anjos Solidários
-                    <p class=" description_smaller">
+                    <p class="description_smaller">
                         Conducted amateur theater and other types of shows to raise funds and material goods for
-                        donation to institutions, particularly the pediatric ward of IPO Porto
-                        Collaborated with Parish Councils for social activities
+                        donation to institutions, particularly the pediatric ward of IPO Porto.
+                        Collaborated with Parish Councils for social activities.
                     </p>
                     <p class="item_preTitle">2014 - 2023</p>
                     </p>
@@ -142,8 +274,8 @@
                         Participated in the Music Section of the Válega Cultural Action Group
                     </p>
                     <p class="description_smaller">
-                        I learned to play classical guitar, cavaquinho, and also participated in the spetacles of the
-                        same musical section
+                        I learned to play classical guitar, cavaquinho, and also participated in the spectacles of the
+                        same musical section.
                     </p>
                     <p class="item_preTitle">2007 - 2016</p>
                 </div>
@@ -155,7 +287,7 @@
                     </p>
                     <p class="description_smaller">
                         Actively participating in this Ovar Carnival group has been an incredibly enriching experience,
-                        allowing me to improve my creativity, communication, teamwork skills, and much more
+                        allowing me to improve my creativity, communication, teamwork skills, and much more.
                     </p>
                     <p class="item_preTitle">2006 - present</p>
                 </div>
@@ -185,17 +317,18 @@
                         <span>Sports</span>
                     </div>
                 </div>
-
             </div>
         </div>
 
         <hr>
+
         <div class="group-3">
             <div class="contact">
                 <h3 class="title">Contact</h3>
                 <div class="contact_items">
                     <div class="contact_item">
-                        <a href="https://www.cm-ovar.pt/pt/menu/2878/um-pouco-da-sua-historia.aspx" target="_blank" style="color: inherit; text-decoration: none;">
+                        <a href="https://www.cm-ovar.pt/pt/menu/2878/um-pouco-da-sua-historia.aspx" target="_blank"
+                            style="color: inherit; text-decoration: none;">
                             <span class="material-symbols-outlined">&#xE0C8;</span>
                             Ovar
                         </a>
@@ -207,7 +340,8 @@
                         </a>
                     </div>
                     <div class="contact_item">
-                        <a href="mailto:pedro_silvavalente@hotmail.com" target="_blank" class="email-link" style="color: inherit; text-decoration: none;">
+                        <a href="mailto:pedro_silvavalente@hotmail.com" target="_blank" class="email-link"
+                            style="color: inherit; text-decoration: none;">
                             <span class="material-symbols-outlined">&#xE158;</span>
                             pedro_silvavalente@hotmail.com
                         </a>
@@ -229,17 +363,34 @@
                 </div>
             </div>
         </div>
- 
     </div>
 
+    <!-- Script para trocar de linguagem -->
     <script>
-        function changeLanguage() {
-            const languageDropdown = document.getElementById('languageDropdown');
-            const selectedLanguage = languageDropdown.value;
-            window.location.href = selectedLanguage;
+        function changeLanguage(lang) {
+            if (lang === 'pt') {
+                window.location.href = 'index_pt.html';
+            } else if (lang === 'en') {
+                window.location.href = 'index_en.html';
+            }
         }
+
+        // marcar o botão ativo consoante a página
+        document.addEventListener('DOMContentLoaded', () => {
+            const path = window.location.pathname;
+            const isEn = path.includes('index_en');
+
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                const lang = btn.dataset.lang;
+                if ((lang === 'en' && isEn) || (lang === 'pt' && !isEn)) {
+                    btn.classList.add('active');
+                }
+            });
+        });
     </script>
 
+
+    <!-- Ativar os ícones Feather -->
     <script>
         feather.replace()
     </script>

@@ -263,19 +263,33 @@ body {
 /*  MAIS ESPAÇO ENTRE SECÇÕES */
 /* ========================= */
 
-/* Dá um respiro maior depois da Experiência */
+/* Coluna esquerda – separadores entre Education / Languages / Qualifications */
+.group-1 > .skills {
+    margin-bottom: 18px;
+}
+
+.group-1 > .edu,
+.group-1 > .languages,   /* EN */
+.group-1 > .linguagens { /* PT */
+    margin-top: 18px;
+    padding-top: 6px;
+    border-top: 1px solid #222;
+}
+
+/* Coluna direita – separadores entre Volunteering / Participation / Interest (PT e EN) */
 .group-2 .exp {
     margin-bottom: 14px;
     padding-bottom: 6px;
 }
 
-/* Separa bem as secções seguintes */
 .group-2 .Volunteering,
+.group-2 .Voluntariado,
 .group-2 .Participation,
+.group-2 .Participacao,
 .group-2 .interest {
-    margin-top: 26px; /* aumenta o afastamento */
+    margin-top: 26px;    /* afasta as secções */
     padding-top: 6px;
-    border-top: 1px solid #222; /* linha subtil opcional */
+    border-top: 1px solid #222; /* divisória */
 }
 
 /* INTERESTS */
@@ -354,6 +368,15 @@ hr {
     text-decoration: underline;
 }
 
+/* tamanhos dos ícones Feather (GitHub / LinkedIn) – afinar para bater com Material Symbols */
+.contact_item svg.feather,
+.social_item svg.feather {
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0;
+    stroke-width: 1.8; /* ligeiramente mais fino para não parecer maior */
+}
+
 /* PRINT (garante 1 página A4 limpinha) */
 @media print {
     body {
@@ -367,6 +390,11 @@ hr {
         box-shadow: none;
         background: white;
         color: black;
+    }
+
+    /* garantir que os títulos aparecem no fundo branco */
+    .title {
+        color: #000;
     }
 
     .dot.filled {
@@ -383,8 +411,13 @@ hr {
 
     /* linhas/ separadores em print mais suaves */
     .group-2 .Volunteering,
+    .group-2 .Voluntariado,
     .group-2 .Participation,
-    .group-2 .interest {
+    .group-2 .Participacao,
+    .group-2 .interest,
+    .group-1 > .edu,
+    .group-1 > .languages,
+    .group-1 > .linguagens {
         border-top: 1px solid #ddd;
     }
 
@@ -420,4 +453,3 @@ hr {
         margin-top: 20px;
     }
 }
-

@@ -1,352 +1,423 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap');
-
+/* RESET */
 * {
-    padding: 0;
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
-}
-
-:root {
-    --primary-color: #a7a3a1;
-    --text-color: #727171;
-}
-
-html {
-    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
-    font-family: Inter, sans-serif;
-    background-color: black;
-    color: white;
-    font-size: 1rem;
+    background: #0b0b0b;
+    color: #eaeaea;
+    display: flex;
+    justify-content: center;
+    padding: 24px;
 }
 
-img {
-    width: 100%;
-}
-
-a {
-    text-decoration: none;
-    color: white;
-}
-
-.description {
-    margin-top: 1rem;
-    font-size: 1.5rem;
-    font-weight: 400;
-    color: var(--text-color);
-}
-
-.description_smaller {
-    margin-top: 0.75rem;
-    font-size: 1.0rem;
-    font-weight: 400;
-    color: var(--text-color);
-}
-
-.title {
-    color: var(--primary-color);
-    font-weight: 700;
-    font-size: 2rem;
-    text-transform: uppercase;
-}
-
-.item_preTitle {
-    font-size: 1.4rem;
-    color: var(--text-color);
-    font-weight: 300;
-}
-
-.item_title {
-    font-size: 1.6rem;
-    color: white;
-    font-weight: 500;
-    margin: 0.8rem 0;
-}
-
-.item_subtitle {
-    font-size: 1.4rem;
-    color: var(--text-color);
-    font-weight: 400;
-}
-
+/* CONTAINER PRINCIPAL */
 .container {
-    max-width: 1000px;
-    width: 90%;
-    margin: 0 auto;
+    width: 210mm; /* A4 width */
+    max-width: 1050px;
+    background: #111;
+    padding: 28px 30px;
+    border-radius: 12px;
     display: grid;
-    padding: 5rem;
-    background: #070707;
-    grid-template-columns: 1fr 1fr;
-    gap: 4rem;
+    grid-template-columns: 1fr 2fr; /* esquerda / direita */
+    gap: 24px;
 }
 
-@media only screen and (max-width: 768px) {
-    .container {
-        width: 100%;
-        grid-template-columns: 1fr;
-        padding: 3rem;
-        gap: 7rem;
-    }
-}
-
+/* PROFILE OCUPA A LARGURA TODA */
 .profile {
     grid-column: 1 / -1;
-    margin-bottom: 2rem;
-}
-
-.group-1,
-.group-2 {
-    display: flex;
-    flex-direction: column;
-    gap: 5rem;
-}
-
-.group-3 {
-    max-width: 700px;
-    width: 100%;
-    margin: 0 auto;
-    grid-column: 1/-1;
-    display: flex;
-    flex-direction: row;
-    gap: 5rem;
-}
-
-.group-3 > div {
-    flex: 1;
-}
-
-@media only screen and (max-width: 768px) {
-    .profile {
-        margin-bottom: 0;
-    }
-
-    .group-3 {
-        flex-direction: column;
-    }
+    margin-bottom: 8px;
 }
 
 .profile_container {
     display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    gap: 2rem;
+    gap: 18px;
+    align-items: center;
 }
 
-.profile_profileImg {
-    max-width: 250px;
-    flex-shrink: 0;
+.profile_profileImg img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #fff;
 }
 
-.profile_name_firstName {
-    color: white;
-    font-weight: 200;
-    font-size: clamp(2rem, 8vw, 3rem);
-    text-transform: uppercase;
-    display: block;
-    margin-bottom: -0.8rem;
-}
-
-.profile_name_lastName {
-    color: var(--primary-color);
+.profile_name {
+    font-size: 28px;
     font-weight: 700;
-    font-size: clamp(2.5rem, 15vw, 4rem);
-    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.profile_job {
     display: block;
+    font-size: 14px;
+    font-weight: 600;
+    opacity: .9;
+    margin-top: 4px;
 }
 
 .profile_title {
-    font-size: 1.5rem;
-    font-weight: 400;
-    text-transform: uppercase;
-    margin-top: 1rem;
+    font-size: 12px;
+    opacity: .8;
+    margin-top: 4px;
 }
 
+.profile_description {
+    margin-top: 10px;
+    font-size: 12px;
+    line-height: 1.5;
+    opacity: .9;
+}
+
+/* ===================== */
+/* LINGUAGEM + DOWNLOAD  */
+/* ===================== */
+
+/* TOGGLE DE LÍNGUA */
+.language-toggle {
+    display: flex;
+    justify-content: flex-end;
+    gap: 4px;
+    margin-bottom: 8px;
+}
+
+.lang-btn {
+    padding: 5px 12px;
+    font-size: 11px;
+    border-radius: 999px;
+    border: 1px solid #444;
+    background: #1b1b1b;
+    color: #eaeaea;
+    cursor: pointer;
+    opacity: 0.7;
+    letter-spacing: 0.3px;
+    text-transform: uppercase;
+    transition:
+        background 0.15s ease-out,
+        color 0.15s ease-out,
+        border-color 0.15s ease-out,
+        opacity 0.15s ease-out,
+        transform 0.1s ease-out;
+}
+
+.lang-btn:hover {
+    opacity: 1;
+    border-color: #777;
+    transform: translateY(-0.5px);
+}
+
+.lang-btn.active {
+    background: #f5f5f5;
+    color: #111;
+    border-color: #ffffff;
+    opacity: 1;
+}
+
+/* botão descarregar CV – CINZENTO */
 .downloadBtn {
     display: inline-flex;
     align-items: center;
-    padding: 10px 20px;
-    font-size: 1.6rem;
-    margin-top: 1rem;
-    border: 2px solid #a7a3a1;
-    background-color: black;
-    color: #a7a3a1;
-    border-radius: 5px;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    gap: 6px;
+    margin-top: 12px;
+    padding: 8px 18px;
+    border-radius: 999px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
     text-decoration: none;
+    color: #f5f5f5;
+    background: linear-gradient(135deg, #3a3a3a, #555555);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.6);
+    border: 1px solid #666;
+    cursor: pointer;
+    transition:
+        transform 0.12s ease-out,
+        box-shadow 0.12s ease-out,
+        background 0.12s ease-out;
 }
 
 .downloadBtn i {
-    margin-right: 10px;
-    vertical-align: middle;
-    display: inline-block;
-    flex-shrink: 0;
+    width: 14px;
+    height: 14px;
 }
 
 .downloadBtn:hover {
-    background-color: #a7a3a1;
-    color: black;
-    border-color: #a7a3a1;
+    transform: translateY(-1px) scale(1.01);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.75);
+    background: linear-gradient(135deg, #4a4a4a, #666666);
 }
 
-@media only screen and (max-width: 768px) {
-    .profile_container {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .profile_profileImg {
-        max-width: 100%;
-        margin-bottom: 1rem;
-    }
+.downloadBtn:active {
+    transform: translateY(0) scale(0.99);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+    background: linear-gradient(135deg, #333333, #4a4a4a);
 }
 
-.skills_list {
-    margin-top: 1rem;
-    margin-left: 2rem;
-    line-height: 2;
-}
-
-.edu_item {
-    margin-top: 2rem;
-}
-
-.interest_items {
-    margin-top: 2rem;
+/* COLUNAS */
+.group-1,
+.group-2 {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column;
+    gap: 18px;
+}
+
+/* Mantém a coluna direita “natural” */
+.group-2 {
+    justify-content: flex-start;
+    height: auto;
+    min-height: 0;
+}
+
+/* TITULOS */
+.title {
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    color: #ffffff;
+    margin-bottom: 6px;
+    text-transform: uppercase;
+}
+
+/* TEXTOS */
+.description {
+    font-size: 12px;
+    line-height: 1.5;
+    opacity: .95;
+}
+
+.description_smaller {
+    font-size: 11px;
+    line-height: 1.5;
+    opacity: .9;
+}
+
+.description_2 {
+    font-size: 10px;
+    opacity: .8;
+    margin-top: 3px;
+}
+
+/* LISTAS */
+.skills_list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.skills_list li span {
+    font-weight: 700;
+    font-size: 12px;
+}
+
+/* NÍVEL DE SKILL */
+.skill-level {
+    display: inline-flex;
+    gap: 4px;
+    margin-left: 8px;
+}
+
+.dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #333;
+}
+
+.dot.filled {
+    background: #fff;
+}
+
+/* ITENS EDU/EXP */
+.edu_item,
+.exp_item,
+.participation,
+.volunteering {
+    margin-top: 6px;
+}
+
+.item_title {
+    font-size: 12px;
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+
+.item_subtitle {
+    font-size: 11px;
+    opacity: .85;
+    margin-bottom: 3px;
+}
+
+.item_preTitle {
+    font-size: 10px;
+    opacity: .7;
+    margin-top: 4px;
+}
+
+/* ========================= */
+/*  MAIS ESPAÇO ENTRE SECÇÕES */
+/* ========================= */
+
+/* Dá um respiro maior depois da Experiência */
+.group-2 .exp {
+    margin-bottom: 14px;
+    padding-bottom: 6px;
+}
+
+/* Separa bem as secções seguintes */
+.group-2 .Volunteering,
+.group-2 .Participation,
+.group-2 .interest {
+    margin-top: 26px; /* aumenta o afastamento */
+    padding-top: 6px;
+    border-top: 1px solid #222; /* linha subtil opcional */
+}
+
+/* INTERESTS */
+.interest_items {
+    display: flex;
     flex-wrap: wrap;
-    gap: 2rem;
+    gap: 10px 14px;
+    margin-top: 6px;
+    justify-content: center;
 }
 
 .interest_item {
-    font-size: 1.5rem;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    gap: 0.5rem;
-    color: var(--text-color);
+    gap: 6px;
+    font-size: 11px;
+    opacity: .9;
+}
+
+.material-symbols-outlined {
+    font-size: 16px;
+}
+
+/* LINHA */
+hr {
+    grid-column: 1 / -1;
+    border: none;
+    height: 1px;
+    background: #2a2a2a;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* ========================= */
+/* CONTACT + SOCIAL CENTRADOS */
+/* ========================= */
+
+.group-3 {
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: center; /* em vez de space-between */
+    align-items: flex-start;
+    gap: 60px; /* afasta um bloco do outro */
+    margin-top: 6px;
+}
+
+/* centra os títulos */
+.group-3 .contact,
+.group-3 .social {
     text-align: center;
 }
 
-.interest_item svg {
-    max-width: 2rem;
-}
-
-@media only screen and (max-width: 768px) {
-    .interest_items {
-        gap: 1rem;
-        justify-content: center;
-    }
-
-    .interest_item {
-        font-size: 1.2rem;
-        gap: 0.3rem;
-    }
-
-    .interest_item svg {
-        max-width: 1.5rem;
-    }
-}
-
-.social_items, .contact_items {
-    margin-top: 2rem;
-}
-
-.contact_item, .social_item {
-    margin-top: 1.5rem;
-    font-size: 1.5rem;
+/* centra os itens dentro de cada bloco */
+.contact_items,
+.social_items {
     display: flex;
-    gap: 0.5rem;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 6px;
     align-items: center;
-    justify-content: flex-start;
-    color: var(--text-color);
 }
 
-.contact_item a, .social_item a {
-    color: var(--text-color);
+.contact_item,
+.social_item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 11px;
     text-decoration: none;
+    color: inherit;
+    opacity: .9;
 }
 
-.contact_item:hover, .social_item:hover, 
-.contact_item a:hover, .social_item a:hover {
-    color: var(--primary-color);
+.social_item:hover {
+    opacity: 1;
+    text-decoration: underline;
 }
 
-.contact_item svg, .social_item svg {
-    width: 2rem;
-}
+/* PRINT (garante 1 página A4 limpinha) */
+@media print {
+    body {
+        background: white;
+        padding: 0;
+    }
 
-hr {
-    grid-column: 1/-1;
-    width: 80%;
-    margin: 0 auto;
-    margin-top: 5rem;
-    margin-bottom: 1rem;
-    border: none;
-    border-top: 2px solid rgba(128, 128, 128, 0.229);
-}
+    .container {
+        width: 210mm;
+        border-radius: 0;
+        box-shadow: none;
+        background: white;
+        color: black;
+    }
 
-@media only screen and (max-width: 768px) {
+    .dot.filled {
+        background: black;
+    }
+
+    .dot {
+        background: #bbb;
+    }
+
     hr {
-        margin: 0 auto;
+        background: #ccc;
+    }
+
+    /* linhas/ separadores em print mais suaves */
+    .group-2 .Volunteering,
+    .group-2 .Participation,
+    .group-2 .interest {
+        border-top: 1px solid #ddd;
+    }
+
+    /* esconder coisas “web” no PDF */
+    .language-toggle,
+    .downloadBtn {
+        display: none !important;
+    }
+
+    /* mais espaço depois da Experiência */
+    .group-2 .exp {
+        margin-bottom: 35px;
+    }
+
+    .group-2 .Participation {
+        margin-top: 0;
+    }
+
+    .exp_item + .exp_item {
+        margin-top: 18px;
+        padding-top: 10px;
+    }
+
+    .exp_item .item_preTitle {
+        margin-top: 6px;
+    }
+
+    .Participation .participation + .participation {
+        margin-top: 18px;
+    }
+
+    .Participation {
+        margin-top: 20px;
     }
 }
 
-.language-selector {
-    margin-left: 80%;
-    position: relative;
-    width: max-content;
-}
-
-.language-selector select {
-    -webkit-tap-highlight-color: transparent;
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    padding: 10px;
-    padding-right: 30px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    background-color: black;
-    color: white;
-    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10"><path fill="white" d="M1 3l4 4 4-4z"/></svg>');
-    background-repeat: no-repeat;
-    background-position: right 10px center;
-    background-size: 10px;
-    cursor: pointer;
-}
-
-select option:hover,
-select option:focus,
-select option:active {
-    background: #000000;
-    color: #ffed00 !important;
-}
-
-select option:checked {
-    background: #d6d6d6 !important;
-    color: #000000 !important;
-}
-
-@media only screen and (max-width: 768px) {
-    .profile_container {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .language-selector {
-        order: 1;
-        margin-top: 1rem;
-        align-self: flex-end;
-    }
-}

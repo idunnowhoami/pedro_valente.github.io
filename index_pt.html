@@ -1,428 +1,400 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pedro Valente</title>
-  <script src="https://unpkg.com/feather-icons"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedro Valente</title>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <div class="container">
-    <!-- TOPO -->
-    <div class="profile">
-      <div class="profile_container">
-        <div class="profile_profileImg">
-          <img src="./profileimg.png" alt="Pedro Valente">
+    <div class="container">
+        <div class="profile">
+            <div class="profile_container">
+                <div class="profile_profileImg">
+                    <img src="./profileimg.png" alt="Pedro Valente">
+                </div>
+                <div>
+                    <!-- Selector de linguagem -->
+                    <div class="language-toggle">
+                        <button class="lang-btn" data-lang="pt" onclick="changeLanguage('pt')">Português</button>
+                        <button class="lang-btn" data-lang="en" onclick="changeLanguage('en')">English</button>
+                    </div>
+
+
+                    <h1 class="profile_name">
+                        <span class="profile_name">Pedro Valente</span>
+                        <span class="profile_job">Programador Ágil de Software/Web</span>
+                    </h1>
+                    <p class="profile_title">Especialista de TI</p>
+                    <p class="description profile_description">
+                        Técnico Superior Profissional em Desenvolvimento Ágil de Software, com experiência em
+                        desenvolvimento de software e práticas DevOps. Aplica metodologias Scrum e princípios SOLID para
+                        criar soluções robustas e escaláveis.
+                    </p>
+
+                    <!-- Botão para sacar o PDF -->
+                    <a class="downloadBtn" href="./CV_Pedro_Valente_PT.pdf" download="cv_PedroValente.pdf">
+                        <i data-feather="download"></i>&nbsp;Download CV
+                    </a>
+                </div>
+            </div>
         </div>
-        <div>
-          <!-- Seletor de linguagem -->
-          <div class="language-toggle">
-            <button class="lang-btn" data-lang="pt" onclick="changeLanguage('pt')">Português</button>
-            <button class="lang-btn" data-lang="en" onclick="changeLanguage('en')">English</button>
-          </div>
 
+        <div class="group-1">
+            <div class="skills">
+                <h3 class="title">SKILLS</h3>
+                <ul class="skills_list description">
+                    <li>
+                        <span>PHP</span>
+                        <div class="skill-level">
+                            <span class="dot filled"></span>
+                            <span class="dot filled"></span>
+                            <span class="dot filled"></span>
+                            <span class="dot filled"></span>
+                            <span class="dot"></span>
+                        </div>
+                        <p class="description_2">PHP, Laravel, PHPUnit, Composer</p>
+                    </li>
+                    <li>
+                        <span>Javascript</span>
+                        <div class="skill-level">
+                            <span class="dot filled"></span>
+                            <span class="dot filled"></span>
+                            <span class="dot filled"></span>
+                            <span class="dot filled"></span>
+                            <span class="dot"></span>
+                        </div>
+                        <p class="description_2">Javascript, AJAX, DOM Manipulation, Bootstrap, Libraries</p>
+                    </li>
+                    <li>
+                        <span>Data base</span>
+                        <div class="skill-level">
+                            <span class="dot filled"></span>
+                            <span class="dot filled"></span>
+                            <span class="dot filled"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                        </div>
+                        <p class="description_2">Microsft SQL, MySQL, MongoDB</p>
+                    </li>
 
-          <h1 class="profile_name">
-            <span class="profile_name">Pedro Valente</span>
-            <span class="profile_job">Programador Ágil de Software/Web</span>
-          </h1>
-          <p class="profile_title">Especialista de TI</p>
-          <p class="description profile_description">
-            Técnico Superior Profissional em Desenvolvimento Ágil de Software, com experiência em
-            desenvolvimento de software e práticas DevOps. Aplica metodologias Scrum e princípios SOLID para
-            criar soluções robustas e escaláveis.
-          </p>
+                    <li>
+                        <span>Java</span>
+                        <div class="skill-level">
+                            <span class="dot filled"></span>
+                            <span class="dot filled"></span>
+                            <span class="dot filled"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                        </div>
+                        <p class="description_2">Java, JavaFX, JUnit, Mockito, Libraries</p>
+                    </li>
 
-          <!-- Botão para descarregar o CV em PT -->
-         <a class="downloadBtn" href="./CV_Pedro_Valente_PT.pdf" download="cv_PedroValente.pdf">
-            <i data-feather="download"></i>&nbsp;Descarregar CV
-          </a>
+                    <li>
+                        <span>HTML & CSS</span>
+                        <div class="skill-level">
+                            <span class="dot filled"></span>
+                            <span class="dot filled"></span>
+                            <span class="dot filled"></span>
+                            <span class="dot filled"></span>
+                            <span class="dot"></span>
+                        </div>
+                        <p class="description_2">HTML, CSS, Markdown</p>
+                    </li>
+                    <li>
+                        <span>C#</span>
+                        <div class="skill-level">
+                            <span class="dot filled"></span>
+                            <span class="dot filled"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                        </div>
+                        <p class="description_2">C#, .NET</p>
+                    </li>
+                    <li>
+                        <span>Python</span>
+                        <div class="skill-level">
+                            <span class="dot filled"></span>
+                            <span class="dot filled"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                        </div>
+                        <p class="description_2">Python - Scripting</p>
+                    </li>
+                    <li>
+                        <span>Containers and Virualization</span>
+                        <div class="skill-level">
+                            <span class="dot filled"></span>
+                            <span class="dot filled"></span>
+                            <span class="dot filled"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                        </div>
+                        <p class="description_2">Vagrant, Docker , Kubernetes</p>
+                    </li>
+                    <li>
+                        <span>CI and CD</span>
+                        <div class="skill-level">
+                            <span class="dot filled"></span>
+                            <span class="dot filled"></span>
+                            <span class="dot filled"></span>
+                            <span class="dot filled"></span>
+                            <span class="dot"></span>
+                        </div>
+                        <p class="description_2">GIT, Github, Bitbucket, Jenkins</p>
+                    </li>
+                    <li>
+                        <span>Documentation</span>
+                        <div class="skill-level">
+                            <span class="dot filled"></span>
+                            <span class="dot filled"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                        </div>
+                        <p class="description_2">Swagger, Javadocs</p>
+                    </li>
+                    <li>
+                        <span>Scrum & Agile</span>
+                        <div class="skill-level">
+                            <span class="dot filled"></span>
+                            <span class="dot filled"></span>
+                            <span class="dot filled"></span>
+                            <span class="dot filled"></span>
+                            <span class="dot"></span>
+                        </div>
+                        <p class="description_smaller">Scrum, Kanban, Jira, Microsoft Project</p>
+                    </li>
+                    <li>
+                        <span>Video & Image editing </span>
+                        <div class="skill-level">
+                            <span class="dot filled"></span>
+                            <span class="dot filled"></span>
+                            <span class="dot filled"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                        </div>
+                        <p class="description_smaller">Adobe Photoshop, Adobe Premiere Pro </p>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="edu">
+                <h3 class="title">Education</h3>
+                <div class="edu_item">
+                    <h4 class="item_title">High School Diploma in Science and Technology</h4>
+                    <p class="item_subtitle">
+                        Escola José Macedo Fragateiro, Ovar
+                    </p>
+                    <p class="item_preTitle">2013 - 2016</p>
+                </div>
+                <div class="edu_item">
+                    <h4 class="item_title">CTESP Agile Software Development</h4>
+                    <p class="item_subtitle">
+                        Instituto Superior de Engenharia do Porto: ISEP
+                    </p>
+                </div>
+                <p class="item_preTitle">2022 - present</p>
+            </div>
+
+            <div class="languages">
+                <h3 class="title">Languages</h3>
+                <ul class="skills_list description">
+                    <li>English | B2</li>
+                    <li>Spanish | A2</li>
+                </ul>
+            </div>
+
+            <div class="edu">
+                <h3 class="title">Qualifications</h3>
+                <div class="edu_item">
+                    <h4 class="item_title">Driver's License B</h4>
+                    <p class="item_preTitle">2017</p>
+                </div>
+            </div>
         </div>
-      </div>
+
+        <div class="group-2">
+            <div class="exp">
+                <h3 class="title">Professional Experience</h3>
+                <div class="exp_item">
+                    <h4 class="item_title">Ramada Aços SA.</h4>
+                    <p class="item_subtitle">Maintenance and Conservation Technician</p>
+                    <p class="description_smaller">
+                        Full-time position focused on ensuring the operational reliability of machines used in
+                        metallurgical heat treatments. Responsible for performing preventive maintenance, diagnosing and
+                        resolving issues, as well as repairing equipment, directly contributing to operational
+                        efficiency and continuity as part of the maintenance team.
+                    </p>
+                    <p class="item_preTitle">2021 - 2023</p>
+                    <br>
+                    <div class="exp_item">
+                        <h4 class="item_title">Digitalmente, Novas Tecnologias de Comunicação, Lda</h4>
+                        <p class="item_subtitle">Web Developer (PHP, Javascript, MySQL)</p>
+                        <p class="description_smaller">
+                            Curricular internship focused on developing a real-time dynamic dashboard for customer
+                            support management. Implemented features include enhanced ticket tracking, insight
+                            generation through visual analyses with interactive graphs and data, as well as continuous
+                            report download capabilities. These improvements significantly contributed to process
+                            efficiency and data-driven decision-making.
+                        </p>
+                        <p class="item_preTitle">April - July 2024</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="Volunteering">
+                <h3 class="title">Volunteering</h3>
+                <div class="volunteering">
+                    <h4 class="item_title">Alquimia das Estrelas</h4>
+                    <p class="description">
+                        I was an integral member of the solidarity and volunteering group Alquimia das Estrelas: ASAS -
+                        Anjos Solidários
+                    <p class="description_smaller">
+                        Conducted amateur theater and other types of shows to raise funds and material goods for
+                        donation to institutions, particularly the pediatric ward of IPO Porto.
+                        Collaborated with Parish Councils for social activities.
+                    </p>
+                    <p class="item_preTitle">2014 - 2023</p>
+                    </p>
+                </div>
+            </div>
+
+            <div class="Participation">
+                <h3 class="title">Participation</h3>
+                <div class="participation">
+                    <h4 class="item_title">GAC</h4>
+                    <p class="description">
+                        Participated in the Music Section of the Válega Cultural Action Group
+                    </p>
+                    <p class="description_smaller">
+                        I learned to play classical guitar, cavaquinho, and also participated in the spectacles of the
+                        same musical section.
+                    </p>
+                    <p class="item_preTitle">2007 - 2016</p>
+                </div>
+                <br>
+                <div class="participation">
+                    <h4 class="item_title">XAXAS Carnival Group</h4>
+                    <p class="description">
+                        Full member of the Xaxas Ovar Carnival Group
+                    </p>
+                    <p class="description_smaller">
+                        Actively participating in this Ovar Carnival group has been an incredibly enriching experience,
+                        allowing me to improve my creativity, communication, teamwork skills, and much more.
+                    </p>
+                    <p class="item_preTitle">2006 - present</p>
+                </div>
+            </div>
+
+            <div class="interest">
+                <h3 class="title">Interests</h3>
+                <div class="interest_items">
+                    <div class="interest_item">
+                        <span class="material-symbols-outlined">&#xF5D0;</span>
+                        <span>Technology</span>
+                    </div>
+                    <div class="interest_item">
+                        <i data-feather="music"></i>
+                        <span>Music</span>
+                    </div>
+                    <div class="interest_item">
+                        <i data-feather="book"></i>
+                        <span>Books</span>
+                    </div>
+                    <div class="interest_item">
+                        <span class="material-symbols-outlined">&#xEAD7;</span>
+                        <span>Fishing</span>
+                    </div>
+                    <div class="interest_item">
+                        <span class="material-symbols-outlined">&#xEA32;</span>
+                        <span>Sports</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="group-3">
+            <div class="contact">
+                <h3 class="title">Contact</h3>
+                <div class="contact_items">
+                    <div class="contact_item">
+                        <a href="https://www.cm-ovar.pt/pt/menu/2878/um-pouco-da-sua-historia.aspx" target="_blank"
+                            style="color: inherit; text-decoration: none;">
+                            <span class="material-symbols-outlined">&#xE0C8;</span>
+                            Ovar
+                        </a>
+                    </div>
+                    <div class="contact_item">
+                        <a href="tel:+351915782122" class="phone-link" style="color: inherit; text-decoration: none;">
+                            <span class="material-symbols-outlined">&#xE32C;</span>
+                            +351 915782122
+                        </a>
+                    </div>
+                    <div class="contact_item">
+                        <a href="mailto:pedro_silvavalente@hotmail.com" target="_blank" class="email-link"
+                            style="color: inherit; text-decoration: none;">
+                            <span class="material-symbols-outlined">&#xE158;</span>
+                            pedro_silvavalente@hotmail.com
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="social">
+                <h3 class="title">Professional Profiles</h3>
+                <div class="social_items">
+                    <a href="https://github.com/idunnowhoami" target="_blank" class="social_item">
+                        <i data-feather="github"></i>
+                        <span>GitHub · /idunnowhoami</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/pedrovalente98" target="_blank" class="social_item">
+                        <i data-feather="linkedin"></i>
+                        <span>LinkedIn · /Pedro Valente</span>
+                    </a>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <!-- COLUNA ESQUERDA -->
-    <div class="group-1">
-      <div class="skills">
-        <h3 class="title">Competências</h3>
-        <ul class="skills_list description">
-          <li>
-            <span>PHP</span>
-            <div class="skill-level">
-              <span class="dot filled"></span>
-              <span class="dot filled"></span>
-              <span class="dot filled"></span>
-              <span class="dot filled"></span>
-              <span class="dot"></span>
-            </div>
-            <p class="description_2">PHP, Laravel, PHPUnit, Composer</p>
-          </li>
-
-          <li>
-            <span>JavaScript</span>
-            <div class="skill-level">
-              <span class="dot filled"></span>
-              <span class="dot filled"></span>
-              <span class="dot filled"></span>
-              <span class="dot filled"></span>
-              <span class="dot"></span>
-            </div>
-            <p class="description_2">JavaScript, AJAX, manipulação do DOM, Bootstrap, bibliotecas</p>
-          </li>
-
-          <li>
-            <span>Java</span>
-            <div class="skill-level">
-              <span class="dot filled"></span>
-              <span class="dot filled"></span>
-              <span class="dot filled"></span>
-              <span class="dot"></span>
-              <span class="dot"></span>
-            </div>
-            <p class="description_2">Java, JavaFX, JUnit, Mockito, bibliotecas</p>
-          </li>
-
-          <li>
-            <span>Bases de dados</span>
-            <div class="skill-level">
-              <span class="dot filled"></span>
-              <span class="dot filled"></span>
-              <span class="dot filled"></span>
-              <span class="dot"></span>
-              <span class="dot"></span>
-            </div>
-            <p class="description_2">Microsoft SQL, MySQL, MongoDB</p>
-          </li>
-
-          <li>
-            <span>HTML &amp; CSS</span>
-            <div class="skill-level">
-              <span class="dot filled"></span>
-              <span class="dot filled"></span>
-              <span class="dot filled"></span>
-              <span class="dot filled"></span>
-              <span class="dot"></span>
-            </div>
-            <p class="description_2">HTML, CSS, Markdown</p>
-          </li>
-
-          <li>
-            <span>C#</span>
-            <div class="skill-level">
-              <span class="dot filled"></span>
-              <span class="dot filled"></span>
-              <span class="dot"></span>
-              <span class="dot"></span>
-              <span class="dot"></span>
-            </div>
-            <p class="description_2">C#, .NET</p>
-          </li>
-
-          <li>
-            <span>Python</span>
-            <div class="skill-level">
-              <span class="dot filled"></span>
-              <span class="dot filled"></span>
-              <span class="dot"></span>
-              <span class="dot"></span>
-              <span class="dot"></span>
-            </div>
-            <p class="description_2">Python (scripting)</p>
-          </li>
-
-          <li>
-            <span>Containers e Virtualização</span>
-            <div class="skill-level">
-              <span class="dot filled"></span>
-              <span class="dot filled"></span>
-              <span class="dot filled"></span>
-              <span class="dot"></span>
-              <span class="dot"></span>
-            </div>
-            <p class="description_2">Vagrant, Docker, Kubernetes</p>
-          </li>
-
-          <li>
-            <span>Integração e entrega contínua</span>
-            <div class="skill-level">
-              <span class="dot filled"></span>
-              <span class="dot filled"></span>
-              <span class="dot filled"></span>
-              <span class="dot filled"></span>
-              <span class="dot"></span>
-            </div>
-            <p class="description_2">Git, GitHub, Bitbucket, Jenkins</p>
-          </li>
-
-          <li>
-            <span>Documentação</span>
-            <div class="skill-level">
-              <span class="dot filled"></span>
-              <span class="dot filled"></span>
-              <span class="dot"></span>
-              <span class="dot"></span>
-              <span class="dot"></span>
-            </div>
-            <p class="description_2">Swagger, Javadoc</p>
-          </li>
-
-          <li>
-            <span>Scrum &amp; Agile</span>
-            <div class="skill-level">
-              <span class="dot filled"></span>
-              <span class="dot filled"></span>
-              <span class="dot filled"></span>
-              <span class="dot filled"></span>
-              <span class="dot"></span>
-            </div>
-            <p class="description_smaller">Scrum, Kanban, Jira, Microsoft Project</p>
-          </li>
-
-          <li>
-            <span>Edição de imagem e vídeo</span>
-            <div class="skill-level">
-              <span class="dot filled"></span>
-              <span class="dot filled"></span>
-              <span class="dot filled"></span>
-              <span class="dot"></span>
-              <span class="dot"></span>
-            </div>
-            <p class="description_smaller">Adobe Photoshop, Adobe Premiere Pro</p>
-          </li>
-        </ul>
-      </div>
-
-      <div class="edu">
-        <h3 class="title">Educação</h3>
-        <div class="edu_item">
-          <h4 class="item_title">12.º Ano Científico-Humanístico de Ciências e Tecnologias</h4>
-          <p class="item_subtitle">
-            Escola José Macedo Fragateiro, Ovar
-          </p>
-          <p class="item_preTitle">2013 - 2016</p>
-        </div>
-        <div class="edu_item">
-          <h4 class="item_title">CTeSP em Desenvolvimento Ágil de Software</h4>
-          <p class="item_subtitle">
-            Instituto Superior de Engenharia do Porto (ISEP)
-          </p>
-          <p class="item_preTitle">2022 - 2025</p>
-        </div>
-      </div>
-
-      <div class="linguagens">
-        <h3 class="title">Idiomas</h3>
-        <ul class="skills_list description">
-          <li>Inglês | B2</li>
-          <li>Espanhol | A2</li>
-        </ul>
-      </div>
-
-      <div class="edu">
-        <h3 class="title">Habilitações</h3>
-        <div class="edu_item">
-          <h4 class="item_title">Carta de Condução B</h4>
-          <p class="item_preTitle">2017</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- COLUNA DIREITA -->
-    <div class="group-2">
-      <div class="exp">
-        <h3 class="title">Experiência Profissional</h3>
-
-        <div class="exp_item">
-          <h4 class="item_title">Equinotec Soluções de Engenharia, Lda.</h4>
-          <p class="item_subtitle">Especialista de TI (Desenvolvimento e Suporte)</p>
-          <p class="description_smaller">
-            Desenvolvimento e suporte de soluções web internas em PHP, JavaScript e MySQL.
-            Criação de sistemas de gestão de manutenção e CRM, com dashboards, relatórios e
-            sincronização de dados. Suporte técnico, administração de servidores Debian e
-            execução de rotinas DevOps.
-          </p>
-          <p class="item_preTitle">Janeiro 2025 - Presente</p>
-          <br>
-        </div>
-
-        <div class="exp_item">
-          <h4 class="item_title">Digitalmente, Novas Tecnologias de Comunicação, Lda.</h4>
-          <p class="item_subtitle">Desenvolvedor Web (PHP, JavaScript, MySQL)</p>
-          <p class="description_smaller">
-            Estágio curricular centrado no desenvolvimento de um dashboard dinâmico para
-            gestão de suporte ao cliente, com rastreamento de tickets, gráficos interativos
-            e relatórios automatizados.
-          </p>
-          <p class="item_preTitle">Abril - Julho 2024</p>
-          <br>
-        </div>
-
-        <div class="exp_item">
-          <h4 class="item_title">Ramada Aços, S.A.</h4>
-          <p class="item_subtitle">Técnico de Manutenção e Conservação</p>
-          <p class="description_smaller">
-            Execução de manutenção preventiva e corretiva em equipamentos metalúrgicos,
-            assegurando a fiabilidade operacional e a continuidade da produção.
-          </p>
-          <p class="item_preTitle">2021 - 2023</p>
-        </div>
-      </div>
-
-      <div class="Voluntariado">
-        <h3 class="title">Voluntariado</h3>
-        <div class="voluntariado">
-          <h4 class="item_title">Alquimia das Estrelas</h4>
-          <p class="description">
-            Fui membro integrante do grupo de solidariedade e voluntariado Alquimia das Estrelas:
-            ASAS - Anjos Solidários.
-          </p>
-          <p class="description_smaller">
-            Realização de teatro amador e outros tipos de espetáculos para angariação de fundos e bens
-            materiais
-            para doação a instituições, nomeadamente à ala pediátrica do IPO do Porto.
-            Colaboração com Juntas de Freguesia em atividades de cariz social.
-          </p>
-          <p class="item_preTitle">2014 - 2023</p>
-        </div>
-      </div>
-
-      <div class="Participacao">
-        <h3 class="title">Participação</h3>
-
-        <div class="participacao">
-          <h4 class="item_title">GAC</h4>
-          <p class="description">
-            Participação na Secção de Música do Grupo de Ação Cultural de Válega.
-          </p>
-          <p class="description_smaller">
-            Aprendi a tocar guitarra clássica e cavaquinho, e participei nos espetáculos da mesma
-            secção musical.
-          </p>
-          <p class="item_preTitle">2007 - 2016</p>
-          <br>
-        </div>
-
-        <br>
-
-        <div class="participacao">
-          <h4 class="item_title">Grupo de Carnaval Xaxas</h4>
-          <p class="description">
-            Membro efetivo do grupo de Carnaval de Ovar Xaxas.
-          </p>
-          <p class="description_smaller">
-            Participar ativamente neste grupo de Carnaval de Ovar tem sido uma experiência incrivelmente
-            enriquecedora, permitindo-me aprimorar as minhas capacidades de criatividade, comunicação,
-            trabalho em equipa e muito mais.
-          </p>
-          <p class="item_preTitle">2006 - Presente</p>
-        </div>
-      </div>
-
-      <div class="interest">
-        <h3 class="title">Interesses</h3>
-        <div class="interest_items">
-          <div class="interest_item">
-            <span class="material-symbols-outlined">&#xF5D0;</span>
-            <span>Tecnologia</span>
-          </div>
-          <div class="interest_item">
-            <i data-feather="music"></i>
-            <span>Música</span>
-          </div>
-          <div class="interest_item">
-            <i data-feather="book"></i>
-            <span>Livros</span>
-          </div>
-          <div class="interest_item">
-            <span class="material-symbols-outlined">&#xEAD7;</span>
-            <span>Pesca</span>
-          </div>
-          <div class="interest_item">
-            <span class="material-symbols-outlined">&#xEA32;</span>
-            <span>Desporto</span>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- RODAPÉ -->
-    <hr>
-
-    <div class="group-3">
-      <div class="contact">
-        <h3 class="title">Contacto</h3>
-        <div class="contact_items">
-          <div class="contact_item">
-            <a href="https://www.cm-ovar.pt/pt/menu/2878/um-pouco-da-sua-historia.aspx" target="_blank"
-              style="color: inherit; text-decoration: none;">
-              <span class="material-symbols-outlined">&#xE0C8;</span>
-              Ovar
-            </a>
-          </div>
-          <div class="contact_item">
-            <a href="tel:+351915782122" class="phone-link" style="color: inherit; text-decoration: none;">
-              <span class="material-symbols-outlined">&#xE32C;</span>
-              +351 915 782 122
-            </a>
-          </div>
-          <div class="contact_item">
-            <a href="mailto:pedro_silvavalente@hotmail.com" target="_blank" class="email-link"
-              style="color: inherit; text-decoration: none;">
-              <span class="material-symbols-outlined">&#xE158;</span>
-              pedro_silvavalente@hotmail.com
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="social">
-        <h3 class="title">Perfis Profissionais</h3>
-        <div class="social_items">
-          <a href="https://github.com/idunnowhoami" target="_blank" class="social_item">
-            <i data-feather="github"></i>
-            <span>GitHub · /idunnowhoami</span>
-          </a>
-          <a href="https://www.linkedin.com/in/pedrovalente98" target="_blank" class="social_item">
-            <i data-feather="linkedin"></i>
-            <span>LinkedIn · /Pedro Valente</span>
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Script para trocar de linguagem -->
-  <script>
-    function changeLanguage(lang) {
-      if (lang === 'pt') {
-        window.location.href = 'index_pt.html';
-      } else if (lang === 'en') {
-        window.location.href = 'index_en.html';
-      }
-    }
-
-    // marcar o botão ativo consoante a página
-    document.addEventListener('DOMContentLoaded', () => {
-      const path = window.location.pathname;
-      const isEn = path.includes('index_en');
-
-      document.querySelectorAll('.lang-btn').forEach(btn => {
-        const lang = btn.dataset.lang;
-        if ((lang === 'en' && isEn) || (lang === 'pt' && !isEn)) {
-          btn.classList.add('active');
+    <!-- Script para trocar de linguagem -->
+    <script>
+        function changeLanguage(lang) {
+            if (lang === 'pt') {
+                window.location.href = 'index_pt.html';
+            } else if (lang === 'en') {
+                window.location.href = 'index_en.html';
+            }
         }
-      });
-    });
-  </script>
+
+        // marcar o botão ativo consoante a página
+        document.addEventListener('DOMContentLoaded', () => {
+            const path = window.location.pathname;
+            const isEn = path.includes('index_en');
+
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                const lang = btn.dataset.lang;
+                if ((lang === 'en' && isEn) || (lang === 'pt' && !isEn)) {
+                    btn.classList.add('active');
+                }
+            });
+        });
+    </script>
 
 
-  <script>
-    feather.replace()
-  </script>
+    <!-- Ativar os ícones Feather -->
+    <script>
+        feather.replace()
+    </script>
 
 </body>
 

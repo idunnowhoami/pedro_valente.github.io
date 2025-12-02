@@ -75,9 +75,9 @@ body {
 
 /* ===================== */
 /* LINGUAGEM + DOWNLOAD  */
+/* (usado na versão EN, mas escondido em print) */
 /* ===================== */
 
-/* TOGGLE DE LÍNGUA */
 .language-toggle {
     display: flex;
     justify-content: flex-end;
@@ -117,7 +117,6 @@ body {
     opacity: 1;
 }
 
-/* botão descarregar CV – CINZENTO */
 .downloadBtn {
     display: inline-flex;
     align-items: center;
@@ -215,7 +214,7 @@ body {
     font-size: 12px;
 }
 
-/* NÍVEL DE SKILL */
+/* NÍVEL DE SKILL – ECRÃ */
 .skill-level {
     display: inline-flex;
     gap: 4px;
@@ -226,11 +225,14 @@ body {
     width: 8px;
     height: 8px;
     border-radius: 50%;
+    display: inline-block;
     background: #333;
+    border: 1px solid #333;
 }
 
 .dot.filled {
     background: #fff;
+    border-color: #fff;
 }
 
 /* ITENS EDU/EXP */
@@ -263,7 +265,7 @@ body {
 /*  MAIS ESPAÇO ENTRE SECÇÕES */
 /* ========================= */
 
-/* Coluna esquerda – separadores entre Education / Languages / Qualifications */
+/* Coluna esquerda – separadores */
 .group-1 > .skills {
     margin-bottom: 18px;
 }
@@ -276,7 +278,7 @@ body {
     border-top: 1px solid #222;
 }
 
-/* Coluna direita – separadores entre Volunteering / Participation / Interest (PT e EN) */
+/* Coluna direita – separadores */
 .group-2 .exp {
     margin-bottom: 14px;
     padding-bottom: 6px;
@@ -287,9 +289,9 @@ body {
 .group-2 .Participation,
 .group-2 .Participacao,
 .group-2 .interest {
-    margin-top: 26px;    /* afasta as secções */
+    margin-top: 26px;
     padding-top: 6px;
-    border-top: 1px solid #222; /* divisória */
+    border-top: 1px solid #222;
 }
 
 /* INTERESTS */
@@ -330,19 +332,17 @@ hr {
 .group-3 {
     grid-column: 1 / -1;
     display: flex;
-    justify-content: center; /* em vez de space-between */
+    justify-content: center;
     align-items: flex-start;
-    gap: 60px; /* afasta um bloco do outro */
+    gap: 60px;
     margin-top: 6px;
 }
 
-/* centra os títulos */
 .group-3 .contact,
 .group-3 .social {
     text-align: center;
 }
 
-/* centra os itens dentro de cada bloco */
 .contact_items,
 .social_items {
     display: flex;
@@ -368,16 +368,19 @@ hr {
     text-decoration: underline;
 }
 
-/* tamanhos dos ícones Feather (GitHub / LinkedIn) – afinar para bater com Material Symbols */
+/* Icons Feather (GitHub / LinkedIn) */
 .contact_item svg.feather,
 .social_item svg.feather {
     width: 16px;
     height: 16px;
     flex-shrink: 0;
-    stroke-width: 1.8; /* ligeiramente mais fino para não parecer maior */
+    stroke-width: 1.8;
 }
 
-/* PRINT (garante 1 página A4 limpinha) */
+/* ========================= */
+/*        PRINT / PDF       */
+/* ========================= */
+
 @media print {
     body {
         background: white;
@@ -392,17 +395,8 @@ hr {
         color: black;
     }
 
-    /* garantir que os títulos aparecem no fundo branco */
     .title {
         color: #000;
-    }
-
-    .dot.filled {
-        background: black;
-    }
-
-    .dot {
-        background: #bbb;
     }
 
     hr {
@@ -427,7 +421,28 @@ hr {
         display: none !important;
     }
 
-    /* mais espaço depois da Experiência */
+    /* Dots das skills em modo texto (● / ○) */
+    .dot,
+    .dot.filled {
+        width: auto;
+        height: auto;
+        border: none;
+        background: transparent !important;
+        display: inline-block;
+        margin: 0 1px;
+    }
+
+    .dot::before {
+        content: "○";       /* vazio */
+        font-size: 9px;
+    }
+
+    .dot.filled::before {
+        content: "●";       /* preenchido */
+        font-size: 9px;
+    }
+
+    /* Espaçamentos extra como tinhas antes */
     .group-2 .exp {
         margin-bottom: 35px;
     }
@@ -445,11 +460,13 @@ hr {
         margin-top: 6px;
     }
 
-    .Participation .participation + .participation {
+    .Participation .participation + .participation,
+    .Participacao .participacao + .participacao {
         margin-top: 18px;
     }
 
-    .Participation {
+    .Participation,
+    .Participacao {
         margin-top: 20px;
     }
 }
